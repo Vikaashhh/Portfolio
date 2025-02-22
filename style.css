@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'General Sans';
+    src: url('GeneralSans-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "General Sans"; /* Set default font */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#minicircle {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s; /* Smooth transition for animations */
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 99999; /* Ensure it's on top of other elements */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #C9C7BA; /* Light gray color */
+}
+
+.bounding {
+    width: fit-content; /* Adjust width to content */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.bounding .boundingelem {
+    transform: translateY(100%); /* Initial position for animation */
+}
+
+#main {
+    width: 100%;
+    background-color: #29292B; /* Dark background color */
+}
+
+#hero {
+    color: #C9C7BA; /* Light text color */
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-color: #29292B; /* Dark background color */
+    position: relative;
+}
+
+#nav {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+    width: 100%;
+    padding: 30px 40px; /* Padding around the nav */
+    color: #C9C7BA; /* Light text color */
+    padding-bottom: 100px; /* Extra bottom padding */
+}
+
+#nav a {
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Font size for links */
+    color: #C9C7BA; /* Light text color */
+}
+
+#heading {
+    margin-top: 8px; /* Space above heading */
+}
+
+#heading h1 {
+    font-family: "General Sans"; /* Font for heading */
+    margin-left: 30px; /* Space to the left */
+    opacity: .6; /* Slightly transparent */
+    line-height: 1; /* Single line height */
+    font-size: 9vw; /* Responsive font size */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: 900; /* Bold text */
+}
+
+#heading #heading2 {
+    margin-left: 130px; /* Space to the left */
+}
+
+.blocktext {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: end; /* Align items to the end */
+    width: fit-content; /* Adjust width to content */
+}
+
+.blocktext h5 {
+    text-transform: uppercase; /* Uppercase text */
+    font-size: 12px; /* Font size for subheading */
+    text-align: right; /* Align text to the right */
+}
+
+#smallheading {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: end; /* Align items to the end */
+    margin-top: 140px; /* Space above small heading */
+    padding-right: 30px; /* Space to the right */
+    letter-spacing: 0.5px; /* Space between letters */
+}
+
+#smallheading h5 {
+    text-transform: uppercase; /* Uppercase text */
+    margin-top: .5vw; /* Space above each item */
+    text-align: right; /* Align text to the right */
+    font-size: 1vw; /* Responsive font size */
+}
+
+#herofooter {
+    width: 100%;
+    position: absolute; /* Position at the bottom */
+    bottom: 3%; /* Space from the bottom */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+    padding: 0 2vw; /* Horizontal padding */
+}
+
+#herofooter a {
+    color: #C9C7BA; /* Light text color */
+    text-transform: uppercase; /* Uppercase text */
+    text-decoration: none; /* Remove underline from links */
+}
+
+#herofooter .circle {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    width: 25px; /* Circle width */
+    height: 25px; /* Circle height */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #888; /* Gray background color */
+}
+
+#herofooter #iconset {
+    display: flex; /* Flexbox for layout */
+    gap: 5px; /* Space between icons */
+}
+
+#second {
+    color: #C9C7BA; /* Light text color */
+    padding-right: 10vw; /* Space to the right */
+    padding-left: 3vw; /* Space to the left */
+    padding-top: 170px; /* Space above section */
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-color: #29292B; /* Dark background color */
+}
+
+#second a {
+    text-transform: uppercase; /* Uppercase text */
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Remove underline from links */
+    color: #C9C7BA; /* Light text color */
+    font-size: 14px; /* Font size for links */
+    display: block; /* Block display for links */
+    margin-top: 40px; /* Space above links */
+}
+
+.element {
+    position: relative;
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+    width: 100%;
+    padding: 2.5vw 2vw; /* Padding around elements */
+    padding-right: 0; /* No right padding */
+    border-top: 1px solid #888; /* Top border */
+}
+
+.element h1 {
+    text-transform: uppercase; /* Uppercase text */
+    font-size: 5vw; /* Responsive font size */
+    opacity: .7; /* Slightly transparent */
+}
+
+.element-last {
+    border-bottom: 1px solid #888; /* Bottom border */
+}
+
+.element img {
+    opacity: 0; /* Initially hidden */
+    pointer-events: none; /* Disable interactions */
+    height: 140%; /* Image height */
+    z-index: 999; /* Ensure it's on top of other elements */
+    position: absolute;
+    transform: translate(-50%, -50%); /* Center image */
+}
+
+#about {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    gap: 50px; /* Space between items */
+    color: #C9C7BA; /* Light text color */
+    padding: 10vw 11vw; /* Padding around section */
+    padding-left: 40vw; /* Extra left padding */
+    width: 100%;
+    background-color: #29292B; /* Dark background color */
+}
+
+#textabout {
+    width: 25rem; /* Fixed width */
+}
+
+#textabout h5 {
+    text-transform: uppercase; /* Uppercase text */
+    opacity: .6; /* Slightly transparent */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+#textabout p {
+    line-height: 1.7; /* Line spacing */
+    margin-bottom: 30px; /* Space below paragraph */
+}
+
+#textabout a {
+    text-decoration: none; /* Remove underline from links */
+    color: #C9C7BA; /* Light text color */
+}
+
+#about img {
+    width: 300px; /* Image width */
+}
+
+#textabout a {
+    padding: 12px 22px; /* Padding around link */
+    border: 1px solid #888; /* Border around link */
+    border-radius: 100px; /* Rounded corners */
+    color: #C9C7BA; /* Light text color */
+    font-size: 12px; /* Font size for link */
+    text-decoration: none; /* Remove underline from links */
+}
+
+#subscribe {
+    padding: 20px 30px; /* Padding around section */
+    padding-bottom: 7vw; /* Extra bottom padding */
+    color: #C9C7BA; /* Light text color */
+    background-color: #29292B; /* Dark background color */
+}
+
+#subscribe h5 {
+    text-transform: uppercase; /* Uppercase text */
+    opacity: .6; /* Slightly transparent */
+}
+
+#subscribe a {
+    color: #C9C7BA; /* Light text color */
+    text-transform: uppercase; /* Uppercase text */
+    font-size: 14px; /* Font size for link */
+    margin-top: 10px; /* Space above link */
+    text-decoration: none; /* Remove underline from links */
+}
+
+#footer {
+    background-color: #29292B; /* Dark background color */
+    color: #C9C7BA; /* Light text color */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+    padding: 40px 30px; /* Padding around footer */
+}
+
+#footerleft {
+    display: flex; /* Flexbox for layout */
+    gap: 20px; /* Space between items */
+}
+
+#footerright {
+    display: flex; /* Flexbox for layout */
+    gap: 20px; /* Space between items */
+}
+
+#footer a {
+    text-transform: uppercase; /* Uppercase text */
+    font-size: 14px; /* Font size for links */
+    font-weight: 500; /* Medium font weight */
+    color: #C9C7BA; /* Light text color */
+    text-decoration: none; /* Remove underline from links */
+}

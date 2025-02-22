@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loco.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Decorative circle element -->
+    <div id="minicircle"></div>
+    
+    <div id="main">
+        <!-- Hero section with navigation and main heading -->
+        <div id="hero">
+            <div id="nav">
+                <!-- Personal branding link -->
+                <a href="#">Vikash Joshi</a>
+                <!-- Menu toggle text -->
+                <h4>MENU+</h4>
+            </div>
+            <div id="heading">
+                <div class="bounding">
+                    <!-- Main profession title -->
+                    <h1 class="boundingelem">Frontend</h1>
+                </div>
+                <div class="blocktext">
+                    <div class="bounding">
+                        <!-- Secondary profession title -->
+                        <h1 class="boundingelem" id="heading2">Developer</h1>
+                    </div>
+                    <div class="bounding">
+                        <!-- Location information -->
+                        <h5 class="boundingelem" id="heading5">Based in India</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Availability and work status -->
+            <div id="smallheading">
+                <div class="bounding">
+                    <h5 class="boundingelem">Available for Full-time & Freelance</h5>
+                </div>
+                <div class="bounding">
+                    <h5 class="boundingelem">Starts Immediately</h5>
+                </div>
+            </div>
+            
+            <!-- Links to external profiles and projects -->
+            <div id="herofooter">
+                <a href="https://www.behance.net/nvsharma" target="_blank" rel="noopener noreferrer">Also a UI/UX Designer <i class="ri-arrow-right-up-line"></i></a>
+
+                <a href="https://github.com/Vikaashhh" target="_blank" rel="noopener noreferrer">Visit my Github <i class="ri-arrow-right-up-line"></i></a>
+                
+                <!-- Decorative icon set -->
+                <div id="iconset">
+                    <div class="circle"><i class="ri-arrow-down-line"></i></div>
+                    <div class="circle"><i class="ri-arrow-down-line"></i></div>
+                </div>                
+            </div>
+        </div>
+
+        <!-- Section showcasing projects -->
+        <div id="second">
+            <div class="element">
+                <!-- Project image and details -->
+                <img src="./assest/trudgy.png">
+                <h1>Trudgy</h1>
+                <h5>2024</h5>
+            </div>
+            <div class="element">
+                <img src="./assest/specscart.png">
+                <h1>Specscart</h1>
+                <h5>2024</h5>
+            </div>
+            <div class="element element-last">
+                <img src="./assest/atmosphere.png">
+                <h1>AtmoSphere</h1>
+                <h5>2024</h5>
+            </div>
+            <!-- Link to more projects on GitHub -->
+            <a href="https://github.com/Vikaashhh" target="_blank" rel="noopener noreferrer">Visit my Github for more projects <i class="ri-arrow-right-up-line"></i></a>
+        </div>
+
+        <!-- About section with personal introduction -->
+        <div id="about">
+            <img src="./assest/Profilepicpng.png" alt="">
+            <div id="textabout">
+                <h5>(About Me)</h5>
+                <p>I’m a front-end developer and UI/UX designer who thrives on turning ideas into sleek, functional digital experiences. I blend clean code with intuitive design, ensuring every interaction feels effortless. When I’m not perfecting pixels or debugging code, I’m capturing moments through my lens or exploring new design trends. My approach? Build it fast, make it smooth, and keep it impactful. Let’s create something amazing!</p>
+
+                <!-- Contact link -->
+                <a href="mailto:vikashjoshi5438@gmail.com" id="letstalk">Let's Talk</a>
+            </div>
+        </div>
+
+        <!-- Subscription or additional info section -->
+        <div id="subscribe">
+            <h5>(Forgot to mention)</h5>
+            <a href="https://www.instagram.com/framesby.vikash/" target="_blank" rel="noopener noreferrer">Follow my Instagram page <i class="ri-arrow-right-up-line"></i></a>
+        </div>
+
+        <!-- Footer with copyright and social media links -->
+        <div id="footer">
+            <div id="footerleft">
+                <h5>2025 &copy;</h5>
+                <h5 id="current-time"></h5>
+            </div>
+            <div id="footerright">
+                <a href="https://www.instagram.com/_vikaashhh/" target="_blank" rel="noopener noreferrer">Instagram</a>
+
+                <a href="https://www.linkedin.com/in/itaintvikash/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+                <a href="https://www.behance.net/nvsharma" target="_blank" rel="noopener noreferrer">Behance</a>
+                
+            </div>
+        </div>
+    </div>  
+    
+    <!-- Script to link gsap for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Script to link locomotive scroll for smooth scrolling -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    
+    <!-- Custom script file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
